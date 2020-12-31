@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discounts",
+  "info": {
+    "name": "discount"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "float"
+    },
+    "roleprice": {
+      "via": "discounts",
+      "model": "roleprice"
+    }
+  }
+}

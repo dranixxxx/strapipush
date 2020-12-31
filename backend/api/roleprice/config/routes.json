@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/roleprices",
+      "handler": "roleprice.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/roleprices/count",
+      "handler": "roleprice.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/roleprices/:id",
+      "handler": "roleprice.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/roleprices",
+      "handler": "roleprice.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/roleprices/:id",
+      "handler": "roleprice.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/roleprices/:id",
+      "handler": "roleprice.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "roleprices",
+  "info": {
+    "name": "roleprice",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "users_permissions_role": {
+      "plugin": "users-permissions",
+      "model": "role",
+      "via": "roleprices"
+    },
+    "discounts": {
+      "collection": "discount",
+      "via": "roleprice"
+    },
+    "name_des": {
+      "type": "richtext"
+    }
+  }
+}
